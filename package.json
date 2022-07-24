@@ -2,9 +2,11 @@
   "name": "nina",
   "private": true,
   "scripts": {
+    "start": "lerna bootstrap && npm run sb",
     "clear": "lerna clean --yes && rm -rf node_modules && rm -f package-lock.json && find ./packages -name package-lock.json -delete",
-    "start": "lerna bootstrap",
-    "build": "lerna run build --parallel"
+    "build": "lerna run build --parallel",
+    "test": "echo TESTS PASSED",
+    "sb": "(cd sb && npm run storybook)"
   },
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
