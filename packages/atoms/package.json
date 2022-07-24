@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
