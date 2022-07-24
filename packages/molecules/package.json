@@ -1,5 +1,5 @@
 {
-  "name": "@nina/molecules",
+  "name": "@marcosgotze/molecules",
   "version": "1.1.7",
   "main": "library.js",
   "module": "dist/library.mjs",
