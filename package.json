@@ -1,6 +1,6 @@
 {
   "name": "nina",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "start": "lerna bootstrap && npm run sb",
     "clear": "lerna clean --yes && rm -rf node_modules && rm -f package-lock.json && find ./packages -name package-lock.json -delete",

@@ -1,14 +1,13 @@
 {
   "name": "@nina/atoms",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
     "dist/*"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "test": "echo TESTS PASSED"
+    "build": "rollup -c"
   },
   "keywords": [],
   "author": "marcos gotze",
