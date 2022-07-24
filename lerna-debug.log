@@ -1,23 +1,8 @@
-0 silly argv {
-0 silly argv   _: [ 'run' ],
-0 silly argv   stream: true,
-0 silly argv   parallel: true,
-0 silly argv   lernaVersion: '5.1.8',
-0 silly argv   '$0': 'node_modules/.bin/lerna',
-0 silly argv   script: 'start'
-0 silly argv }
-1 notice cli v5.1.8
-2 verbose rootPath /home/marcos/magspace/study/nina
-3 error JSONError: Unexpected token "}" (0x7D) in JSON at position 505 while parsing near "...\"vue\": \"^3.2.21\",\n  },\n  \"description\": ..." in packages/molecules/package.json
-3 error
-3 error [0m [90m 24 |[39m   [32m"dependencies"[39m[33m:[39m {[0m
-3 error [0m [90m 25 |[39m     [32m"vue"[39m[33m:[39m [32m"^3.2.21"[39m[33m,[39m[0m
-3 error [0m[31m[1m>[22m[39m[90m 26 |[39m   }[33m,[39m[0m
-3 error [0m [90m    |[39m   [31m[1m^[22m[39m[0m
-3 error [0m [90m 27 |[39m   [32m"description"[39m[33m:[39m [32m""[39m[0m
-3 error [0m [90m 28 |[39m }[0m
-3 error [0m [90m 29 |[39m[0m
-3 error
-3 error     at parseJson (/home/marcos/magspace/study/nina/node_modules/parse-json/index.js:29:21)
-3 error     at parse (/home/marcos/magspace/study/nina/node_modules/load-json-file/index.js:15:9)
-3 error     at module.exports (/home/marcos/magspace/study/nina/node_modules/load-json-file/index.js:18:47)
+38 warn complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+39 error Error: Command failed with exit code 128: git tag @nina/atoms@1.1.1 -m @nina/atoms@1.1.1
+39 error fatal: tag '@nina/atoms@1.1.1' already exists
+39 error     at makeError (/home/marcos/.nvm/versions/node/v14.20.0/lib/node_modules/lerna/node_modules/execa/lib/error.js:60:11)
+39 error     at handlePromise (/home/marcos/.nvm/versions/node/v14.20.0/lib/node_modules/lerna/node_modules/execa/index.js:118:26)
+39 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+39 error     at async Promise.all (index 0)
+39 error     at async Promise.all (index 0)
