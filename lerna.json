@@ -1,5 +1,11 @@
 {
   "packages": ["packages/*"],
   "useNx": true,
-  "version": "0.0.0"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): updated release notes and package versions"
+    }
+  }
 }
