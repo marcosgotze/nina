@@ -1,12 +1,12 @@
 'use strict';
 
-var atoms = require('@nina/atoms');
+var atsoms = require('@nina/atsoms');
 var vue = require('vue');
 
 var script = {
   name: "Footer",
   components: {
-    Logo: atoms.Logo,
+    Logo: atsoms.Logo,
   },
 };
 

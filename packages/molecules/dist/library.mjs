@@ -1,4 +1,4 @@
-import { Logo } from '@nina/atoms';
+import { Logo } from '@nina/atsoms';
 import { resolveComponent, openBlock, createElementBlock, createVNode, createElementVNode } from 'vue';
 
 var script = {
