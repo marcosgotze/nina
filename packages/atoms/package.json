@@ -7,8 +7,7 @@
     "dist/*"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "test": "echo TESTS PASSED"
+    "build": "rollup -c"
   },
   "keywords": [],
   "author": "marcos gotze",

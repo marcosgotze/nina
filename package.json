@@ -1,6 +1,5 @@
 {
   "name": "nina",
-  "private": true,
   "version": "1.0.0",
   "scripts": {
     "start": "lerna bootstrap && npm run sb",
