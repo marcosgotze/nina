@@ -1,20 +1,27 @@
 name: Publish
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches:
+      - development
       - main
-
 
 jobs:
   publish:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-      - run: npm ci
+    - name: "Checkout"
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: "Use NodeJS 14"
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
 
     - name: "Setup npm"
       run: |
