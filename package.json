@@ -16,9 +16,6 @@
     "nx": "14.4.3",
     "prettier": "^2.0.5"
   },
-  "publishConfig": {
-    "@marcosgotze:registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "npm-watch": "^0.11.0"
   }
