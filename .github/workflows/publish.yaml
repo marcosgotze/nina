@@ -33,8 +33,6 @@ jobs:
       - run: |
             git config user.name "${{ github.actor }}"
             git config user.email "${{ github.actor}}@users.noreply.github.com"
-            git stash
-            git checkout ${{ github.ref }}
             git switch -
             npx lerna version --conventional-commits --conventional-graduate --yes
             npx lerna publish from-git --yes
