@@ -1,6 +1,6 @@
 {
   "name": "@nina/molecules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -25,5 +25,5 @@
   },
   "description": "",
   "gitHead": "8aa917b4ea8a9d4cf7e5dbd1154c6efba022d242",
-  "repository":"https://github.com/marcosgotze/nina"
+  "repository": "https://github.com/marcosgotze/nina"
 }
