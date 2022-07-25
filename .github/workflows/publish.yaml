@@ -27,13 +27,13 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm ci
       - run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
-          git switch -c ${{ github.ref }}
-          git checkout ${{ github.ref }}
-          npx lerna version --conventional-commits --conventional-graduate --yes
-          npx lerna publish from-git --yes
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            git config user.name "${{ github.actor }}"
+            git config user.email "${{ github.actor}}@users.noreply.github.com"
+            git stash
+            git checkout ${{ github.ref }}
+            npx lerna version --conventional-commits --conventional-graduate --yes
+            npx lerna publish from-git --yes
