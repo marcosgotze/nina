@@ -22,10 +22,10 @@ jobs:
       packages: write
       contents: read
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://npm.pkg.github.com/
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,6 +33,7 @@ jobs:
       - run: |
             git config user.name "${{ github.actor }}"
             git config user.email "${{ github.actor}}@users.noreply.github.com"
-            npx lerna bootstrap
+            git stash
+            git checkout ${{ github.ref }}
             npx lerna version --conventional-commits --conventional-graduate --yes
             npx lerna publish from-git --yes
