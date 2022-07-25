@@ -33,5 +33,6 @@ jobs:
           npm ci
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
+          git checkout ${{ github.ref }}
           npx lerna version --conventional-commits --conventional-graduate --yes
           npx lerna publish from-git --yes
