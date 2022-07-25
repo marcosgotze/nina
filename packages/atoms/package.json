@@ -1,6 +1,6 @@
 {
-  "name": "@nina/atoms",
-  "version": "1.0.6",
+  "name": "@marcosgotze/atoms",
+  "version": "1.0.4-beta.0",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -24,8 +24,8 @@
     "vue": "^3.2.21"
   },
   "description": "",
-  "gitHead": "407b89d046ba70643f86252da20114731868738e",
+  "gitHead": "84c9d5d6185f216be5bc3df141a4f7f2da478e11",
   "repository": {
-    "url": "http://159.223.209.6/nina"
+    "url": "https://github.com/marcosgotze/nina"
   }
 }
