@@ -21,12 +21,11 @@ jobs:
       packages: write
       contents: read
     steps:
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - name: "Version and publish"
+      - uses: actions/checkout@v3
         run: |
           npm ci
           git config user.name "${{ github.actor }}"
