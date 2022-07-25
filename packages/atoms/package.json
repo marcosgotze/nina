@@ -24,11 +24,8 @@
     "vue": "^3.2.21"
   },
   "description": "",
-  "gitHead": "dca7e7e1c82af99b34d6b0f139572e07f043fee3",
+  "gitHead": "233a1a87b56b1093fe6e3c708349f291648726ab",
   "repository": {
     "url": "https://github.com/marcosgotze/nina"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@marcosgotze"
   }
 }
