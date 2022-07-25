@@ -1,6 +1,6 @@
 {
   "name": "@nina/atoms",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -24,7 +24,7 @@
     "vue": "^3.2.21"
   },
   "description": "",
-  "gitHead": "5dd8a80062bab8ee10938aadfb152213a3f5b454",
+  "gitHead": "407b89d046ba70643f86252da20114731868738e",
   "repository": {
     "url": "http://159.223.209.6/nina"
   }
