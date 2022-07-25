@@ -1,6 +1,6 @@
 {
   "name": "@nina/atoms",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -25,8 +25,10 @@
   },
   "description": "",
   "gitHead": "dca7e7e1c82af99b34d6b0f139572e07f043fee3",
-  "repository":{
-    "url":"https://github.com/marcosgotze/nina"
+  "repository": {
+    "url": "https://github.com/marcosgotze/nina"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@marcosgotze" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@marcosgotze"
+  }
 }
