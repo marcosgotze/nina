@@ -33,6 +33,6 @@
   },
   "homepage": "https://github.com/mgotze/nina#readme",
   "publishConfig": {
-    "@marcosgotze:registry": "https://npm.pkg.github.com/molecules"
+    "@marcosgotze:registry": "https://npm.pkg.github.com/"
   }
 }
