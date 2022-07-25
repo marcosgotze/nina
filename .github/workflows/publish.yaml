@@ -29,11 +29,12 @@ jobs:
           registry-url: https://npm.pkg.github.com/
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm ci
       - run: |
+            npm i
             git config user.name "${{ github.actor }}"
             git config user.email "${{ github.actor}}@users.noreply.github.com"
             npx lerna run build
+            git status
             git add .
             git commit -m "chore: build packages"
             git push
