@@ -27,17 +27,13 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - name: "Version and publish"
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
+          npm ci
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           git stash
           git checkout ${{ github.ref }}
-          npm ci
-          if [ ${{ github.base_ref }} = development ]; then
-            npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
-          else
-            npx lerna version --conventional-commits --conventional-graduate --yes
-          fi
+          npx lerna version --conventional-commits --conventional-graduate --yes
           npx lerna publish from-git --yes
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
