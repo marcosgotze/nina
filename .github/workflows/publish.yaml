@@ -32,7 +32,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           git stash
-          git checkout ${{ github.ref }}
+          git checkout ${{ $GIT_BRANCH  }}
           if [ ${{ github.base_ref }} = development ]; then
             npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
           else
