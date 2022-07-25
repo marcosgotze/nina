@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/nina
+          registry-url: https://npm.pkg.github.com/
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm ci
@@ -34,3 +34,5 @@ jobs:
             git config user.name "${{ github.actor }}"
             git config user.email "${{ github.actor}}@users.noreply.github.com"
             npx lerna publish --canary --yes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
