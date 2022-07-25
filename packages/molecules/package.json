@@ -24,8 +24,15 @@
     "vue": "^3.2.21"
   },
   "description": "",
-  "publishConfig": {
-    "@marcosgotze:registry": "https://npm.pkg.github.com/marcosgotze"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgotze/nina.git"
   },
-  "gitHead": "a62523d6fa6e5393a629a6756af3cddb6eb6d328"
+  "bugs": {
+    "url": "https://github.com/mgotze/nina/issues"
+  },
+  "homepage": "https://github.com/mgotze/nina#readme",
+  "publishConfig": {
+    "@marcosgotze:registry": "https://npm.pkg.github.com/molecules"
+  }
 }
