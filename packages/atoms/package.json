@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.0.7",
+  "version": "1.0.7-alpha.32+1a800b62",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -26,13 +26,14 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mgotze/nina.git"
+    "url": "git+https://github.com/marcosgotze/nina.git"
   },
   "bugs": {
-    "url": "https://github.com/mgotze/nina/issues"
+    "url": "https://github.com/marcosgotze/nina/issues"
   },
-  "homepage": "https://github.com/mgotze/nina#readme",
+  "homepage": "https://github.com/marcosgotze/nina#readme",
   "publishConfig": {
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
-  }
+  },
+  "gitHead": "1a800b629d465d84185d025ba009d6c6f1e03cc7"
 }
