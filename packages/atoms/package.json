@@ -1,5 +1,5 @@
 {
-  "name": "@nina/atoms",
+  "name": "@marcosgotze/atoms",
   "version": "1.2.9",
   "main": "library.js",
   "module": "dist/library.mjs",
@@ -24,5 +24,5 @@
     "vue": "^3.2.21"
   },
   "description": "",
-  "gitHead": "9313970f065929b7db39aef80fbfd209f473d375"
+  "gitHead": "6b512674a29a3726872b963c12f9a6a15af77bb3"
 }
