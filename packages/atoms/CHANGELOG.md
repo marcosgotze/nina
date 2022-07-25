@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.10](https://github.com/marcosgotze/nina/compare/@marcosgotze/atoms@1.2.6...@marcosgotze/atoms@1.2.10) (2022-07-25)
+
+**Note:** Version bump only for package @marcosgotze/atoms
+
+
+
+
+
 ## [1.2.9](https://github.com/marcosgotze/nina/compare/@nina/atoms@1.2.8...@nina/atoms@1.2.9) (2022-07-25)
 
 **Note:** Version bump only for package @nina/atoms

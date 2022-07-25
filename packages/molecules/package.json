@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/molecules",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [

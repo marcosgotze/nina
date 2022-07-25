@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.7](https://github.com/marcosgotze/nina/compare/@marcosgotze/molecules@1.2.5...@marcosgotze/molecules@1.2.7) (2022-07-25)
+
+**Note:** Version bump only for package @marcosgotze/molecules
+
+
+
+
+
 ## [1.2.6](https://github.com/marcosgotze/nina/compare/@nina/molecules@1.1.8...@nina/molecules@1.2.6) (2022-07-25)
 
 **Note:** Version bump only for package @nina/molecules
