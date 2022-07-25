@@ -1,36 +1,8 @@
-name: Publish
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-      - run: npm ci
-
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm ci
-      - run: |
-            git config user.name "${{ github.actor }}"
-            git config user.email "${{ github.actor}}@users.noreply.github.com"
-            npx lerna publish --canary --yes
-      
+steps:
+- uses: actions/checkout@v3
+- uses: actions/setup-node@v3
+  with:
+    registry-url: 'https://npm.pkg.github.com'
+- run: npx lerna publish --canary --yes
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
