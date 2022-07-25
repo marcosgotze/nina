@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
+      - name: "Version and publish"
         run: |
           npm ci
           git config user.name "${{ github.actor }}"
