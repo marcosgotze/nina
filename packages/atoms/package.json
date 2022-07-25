@@ -24,7 +24,8 @@
     "vue": "^3.2.21"
   },
   "description": "",
-  "repository": {
-    "url": "https://github.com/marcosgotze"
+  "publishConfig": {
+    "@marcosgotze:registry": "https://npm.pkg.github.com/marcosgotze"
   }
 }
+
