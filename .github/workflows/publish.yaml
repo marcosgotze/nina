@@ -16,6 +16,8 @@ jobs:
       - run: npm ci
 
   publish-gpr:
+    env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -26,13 +28,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/
-        env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          registry-url: https://npm.pkg.github.com/@marcosgotze
+       
       - run: npm ci
       - run: |
-            npm set @marcosgotze:registry=https://npm.pkg.github.com
-            npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
             git config user.name "${{ github.actor }}"
             git config user.email "${{ github.actor}}@users.noreply.github.com"
             npx lerna publish --canary --yes
