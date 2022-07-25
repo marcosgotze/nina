@@ -27,6 +27,7 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
+      - run: npx lerna bootstrap
       - run: npx lerna version --conventional-commits --conventional-graduate --yes
       - run: npx lerna publish from-git --yes
         env:

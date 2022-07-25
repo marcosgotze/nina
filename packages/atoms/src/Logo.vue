@@ -56,7 +56,7 @@
       <clipPath id="clip0_5193_9369">
         <rect
           width="150"
-          height="32"
+          height="33"
           fill="white"
           transform="translate(0 0.5)"
         />
