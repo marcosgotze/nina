@@ -1,5 +1,5 @@
 {
-  "name": "@marcosgotze/atoms",
+  "name": "@nina/atoms",
   "version": "1.0.4-beta.1",
   "main": "library.js",
   "module": "dist/library.mjs",

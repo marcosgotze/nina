@@ -25,9 +25,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - run: npm ci
+          registry-url: http://159.223.209.6
       - name: "Version and publish"
+      - run: npm ci
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
