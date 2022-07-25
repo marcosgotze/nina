@@ -16,9 +16,10 @@ jobs:
       - run: npm ci
 
   publish-gpr:
-    env: |
-
-        NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    env: 
+      NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     needs: build
     runs-on: ubuntu-latest
     permissions:
