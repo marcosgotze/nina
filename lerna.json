@@ -5,7 +5,7 @@
   "version": "independent",
   "command": {
     "publish": {
-      "registry": "https://npm.pkg.github.com/marcosgotze"
+      "registry": "http://159.223.209.6/"
     }
   }
 }
