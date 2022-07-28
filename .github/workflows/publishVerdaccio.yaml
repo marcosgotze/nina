@@ -1,4 +1,4 @@
-name: Publish to Github Packages
+name: Publish to Verdaccio
 
 on:
   pull_request:
@@ -29,6 +29,6 @@ jobs:
           npx lerna version --conventional-commits --yes
         fi
 
-        npx lerna publish from-git --yes
+        npx lerna publish --yes
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
