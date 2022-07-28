@@ -1,7 +1,8 @@
 {
   "packages": [
-    "packages/*"
+    "packages/**"
   ],
+  "useNx": true,
   "version": "independent",
   "command": {
     "publish": {
