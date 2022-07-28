@@ -20,9 +20,6 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {
-    "vue": "^3.2.21"
-  },
   "description": "",
   "repository": {
     "type": "git",
@@ -35,5 +32,8 @@
   "publishConfig": {
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
   },
-  "gitHead": "1a800b629d465d84185d025ba009d6c6f1e03cc7"
+  "gitHead": "1a800b629d465d84185d025ba009d6c6f1e03cc7",
+  "dependencies": {
+    "vue": "3.2.21"
+  }
 }
