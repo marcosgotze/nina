@@ -20,9 +20,6 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {
-    "vue": "^3.2.21"
-  },
   "description": "",
   "repository": {
     "type": "git",
@@ -34,5 +31,8 @@
   "homepage": "https://github.com/marcosgotze/nina#readme",
   "publishConfig": {
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "vue": "3.2.21"
   }
 }
