@@ -1,4 +1,4 @@
 import Logo from './Logo.vue'
-import InputTextarea from './InputTextarea.vue'
+import Btn from './Btn.vue'
 
-export default { Logo, InputTextarea}
+export default { Logo, Btn}

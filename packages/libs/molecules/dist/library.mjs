@@ -1,22 +1,11 @@
-import { Logo } from '@marcosgotze/atoms';
-import { resolveComponent, openBlock, createElementBlock, createVNode, createElementVNode } from 'vue';
+import { openBlock, createElementBlock } from 'vue';
 
 var script = {
-  name: "Footer",
-  components: {
-    Logo,
-  },
+  name: "ooter",
 };
 
-const _hoisted_1 = /*#__PURE__*/createElementVNode("input", { type: "text" }, null, -1 /* HOISTED */);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_logo = resolveComponent("logo");
-
-  return (openBlock(), createElementBlock("div", null, [
-    createVNode(_component_logo),
-    _hoisted_1
-  ]))
+  return (openBlock(), createElementBlock("div", null, " footer "))
 }
 
 script.render = render;

@@ -1,24 +1,13 @@
 'use strict';
 
-var atoms = require('@marcosgotze/atoms');
 var vue = require('vue');
 
 var script = {
-  name: "Footer",
-  components: {
-    Logo: atoms.Logo,
-  },
+  name: "ooter",
 };
 
-const _hoisted_1 = /*#__PURE__*/vue.createElementVNode("input", { type: "text" }, null, -1 /* HOISTED */);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_logo = vue.resolveComponent("logo");
-
-  return (vue.openBlock(), vue.createElementBlock("div", null, [
-    vue.createVNode(_component_logo),
-    _hoisted_1
-  ]))
+  return (vue.openBlock(), vue.createElementBlock("div", null, " footer "))
 }
 
 script.render = render;

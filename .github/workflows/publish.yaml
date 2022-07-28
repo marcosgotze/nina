@@ -13,6 +13,12 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         registry-url: 'https://npm.pkg.github.com'
-    - run: npx lerna publish --canary --yes
+    - run: |
+        if [ ${{ github.base_ref }} = development ]; then
+          npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
+        else
+          npx lerna version --conventional-commits --conventional-graduate --yes
+        fi
+        npx lerna publish --canary --yes
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
