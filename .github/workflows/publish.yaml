@@ -32,3 +32,27 @@ jobs:
         npx lerna publish from-git --yes
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        
+    - name: Publish to verdaccio
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        registry-url: 'http://159.223.209.6/'
+    - run: |
+        run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+        git stash
+        git checkout ${{ github.ref }}
+
+        if [ ${{ github.base_ref }} = development ]; then
+          npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
+        else
+          npx lerna version --conventional-commits --yes
+        fi
+
+        npx lerna publish --yes
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
