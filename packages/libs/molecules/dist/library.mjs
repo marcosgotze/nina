@@ -1,11 +1,11 @@
 import { openBlock, createElementBlock } from 'vue';
 
 var script = {
-  name: "ooter",
+  name: "Footer",
 };
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("div", null, " footer "))
+  return (openBlock(), createElementBlock("div", null, " Footer "))
 }
 
 script.render = render;

@@ -3,11 +3,11 @@
 var vue = require('vue');
 
 var script = {
-  name: "ooter",
+  name: "Footer",
 };
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (vue.openBlock(), vue.createElementBlock("div", null, " footer "))
+  return (vue.openBlock(), vue.createElementBlock("div", null, " Footer "))
 }
 
 script.render = render;
