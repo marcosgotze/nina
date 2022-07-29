@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/molecules",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "library.js",
   "module": "dist/library.mjs",
   "files": [
@@ -34,7 +34,7 @@
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@marcosgotze/atoms": "^1.0.7-alpha.38",
+    "@marcosgotze/atoms": "^1.0.7-alpha.40",
     "vue": "3.2.21"
   }
 }
