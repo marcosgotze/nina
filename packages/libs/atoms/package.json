@@ -3,7 +3,6 @@
   "version": "1.0.7-alpha.37",
   "main": "index.js",
   "module": "dist/library.mjs",
-  "private": true,
   "files": [
     "dist/*"
   ],
