@@ -1,11 +1,7 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.0.7-alpha.38",
-  "main": "index.js",
-  "module": "dist/library.mjs",
-  "files": [
-    "dist/*"
-  ],
+  "version": "1.0.7-alpha.36",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack"
   },
