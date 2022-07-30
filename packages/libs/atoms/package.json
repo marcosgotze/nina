@@ -46,10 +46,5 @@
   "homepage": "https://github.com/marcosgotze/nina#readme",
   "publishConfig": {
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  }
 }
