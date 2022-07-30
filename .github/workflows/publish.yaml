@@ -23,7 +23,7 @@ jobs:
         git stash
         git checkout ${{ github.ref }}
 
-        npx lerna build
+        npm run build
 
         if [ ${{ github.base_ref }} = development ]; then
           npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes
