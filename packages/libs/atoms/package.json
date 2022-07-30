@@ -36,6 +36,17 @@
     },
     "rules": {}
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosgotze/nina.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcosgotze/nina/issues"
+  },
+  "homepage": "https://github.com/marcosgotze/nina#readme",
+  "publishConfig": {
+    "@marcosgotze:registry": "https://npm.pkg.github.com/"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
