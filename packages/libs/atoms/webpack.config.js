@@ -10,8 +10,7 @@ module.exports = (env = {}) => ({
     path.resolve(__dirname, "./src/main.js")
   ].filter(Boolean),
   output: {
-    path: path.resolve(__dirname, "./dist"),
-    publicPath: "/dist/"
+    libraryTarget: 'umd',
   },
   resolve: {
     alias: {
