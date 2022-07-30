@@ -3,7 +3,7 @@
   "version": "1.0.7-alpha.42",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build --target lib --name vue-example-pkg src/main.js"
+    "build": "vue-cli-service build --target lib --name atoms src/main.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
