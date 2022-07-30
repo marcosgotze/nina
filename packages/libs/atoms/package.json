@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.0.7-alpha.41",
+  "version": "1.0.7-alpha.42",
   "private": true,
   "scripts": {
     "build": "vue-cli-service build --target lib --name atoms src/main.js"
