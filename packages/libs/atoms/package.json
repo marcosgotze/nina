@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "@marcosgotze/atoms@1.0.7-alpha.41",
+  "version": "1.0.7-alpha.41",
   "private": true,
   "scripts": {
     "build": "vue-cli-service build --target lib --name vue-example-pkg src/main.js"
