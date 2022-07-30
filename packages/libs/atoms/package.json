@@ -1,43 +1,41 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.0.7-alpha.41",
-  "main": "dist/index.js",
-  "files": [
-    "dist/"
-  ],
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "vue-cli-service build --target lib --name vue-example-pkg src/main.js"
   },
-  "keywords": [],
-  "author": "marcos gotze",
-  "license": "ISC",
-  "devDependencies": {
-    "rollup": "^2.77.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
-  },
-  "directories": {
-    "doc": "docs"
-  },
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marcosgotze/nina.git"
-  },
-  "bugs": {
-    "url": "https://github.com/marcosgotze/nina/issues"
-  },
-  "homepage": "https://github.com/marcosgotze/nina#readme",
-  "publishConfig": {
-    "@marcosgotze:registry": "https://npm.pkg.github.com/"
-  },
-  "gitHead": "1a800b629d465d84185d025ba009d6c6f1e03cc7",
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "vue": "3.2.21",
-    "vue-loader": "^16.0.0-rc.1",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^3.11.0"
-  }
+    "core-js": "^3.8.3",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
