@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.0.7-alpha.46",
+  "version": "1.0.7-alpha.48",
   "main": "dist/atoms.common.js",
   "files": [
     "dist/*"
@@ -33,6 +33,18 @@
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
-    }
+    },
+    "rules": {}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosgotze/nina.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcosgotze/nina/issues"
+  },
+  "homepage": "https://github.com/marcosgotze/nina#readme",
+  "publishConfig": {
+    "@marcosgotze:registry": "https://npm.pkg.github.com/"
   }
 }
