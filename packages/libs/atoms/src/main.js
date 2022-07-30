@@ -1,14 +1,18 @@
-import components from'./components'
+import * as components from './components'
 
-const plugin = {
-  install (Vue) {
-    for (const prop in components) {
-      if (components.hasOwnProperty(prop)) {
-        const component = components[prop]
-        Vue.component(component.name, component)
-      }
+const ComponentLibrary = {
+  install(Vue) {
+    // components
+    for (const componentName in components) {
+      const component = components[componentName]
+
+      Vue.component(component.name, component)
     }
   }
 }
 
-export default plugin
+export default ComponentLibrary
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(ComponentLibrary)
+}
