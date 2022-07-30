@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/test",
-  "version": "1.0.7-alpha.45",
+  "version": "1.0.7-alpha.46",
   "main": "dist/main.js",
   "files": [
     "dist/"
