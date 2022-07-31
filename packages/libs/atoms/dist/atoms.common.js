@@ -788,7 +788,7 @@ __webpack_require__.d(__webpack_exports__, {
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
 __webpack_require__.d(components_namespaceObject, {
-  "default": () => (components)
+  "AtomButton": () => (AtomButton)
 });
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
@@ -810,7 +810,7 @@ if (typeof window !== 'undefined') {
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
 var es_function_name = __webpack_require__(309);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/AtomButton.vue?vue&type=template&id=6288961e&
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/loaders/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/AtomButton.vue?vue&type=template&id=3f3f5bc2&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -825,11 +825,11 @@ var staticRenderFns = [function () {
   return _c('div', [_c('button', [_vm._v("Botão")])]);
 }];
 
-;// CONCATENATED MODULE: ./src/components/AtomButton.vue?vue&type=template&id=6288961e&
+;// CONCATENATED MODULE: ./src/components/AtomButton.vue?vue&type=template&id=3f3f5bc2&
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/@vue/vue-loader-v15/lib/index.js??vue-loader-options!./src/components/AtomButton.vue?vue&type=script&lang=js&
 /* harmony default export */ const AtomButtonvue_type_script_lang_js_ = ({
-  name: 'atom-buttom'
+  name: 'atom-button'
 });
 ;// CONCATENATED MODULE: ./src/components/AtomButton.vue?vue&type=script&lang=js&
  /* harmony default export */ const components_AtomButtonvue_type_script_lang_js_ = (AtomButtonvue_type_script_lang_js_); 
@@ -953,7 +953,7 @@ var component = normalizeComponent(
 /* harmony default export */ const AtomButton = (component.exports);
 ;// CONCATENATED MODULE: ./src/components/index.js
 
-/* harmony default export */ const components = (AtomButton);
+
 ;// CONCATENATED MODULE: ./src/main.js
 
 

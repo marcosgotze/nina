@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'atom-buttom'
+    name: 'atom-button'
   }
 </script>
 
