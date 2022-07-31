@@ -1,3 +1,3 @@
-import AtomButton from './AtomButton.vue'
+import AtomButton from './AtomButton'
 
-export default AtomButton
+export { AtomButton };
