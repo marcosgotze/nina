@@ -1,3 +1,9 @@
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -201,19 +207,16 @@ var __vue_component__$1 = /*#__PURE__*/normalizeComponent({
   staticRenderFns: __vue_staticRenderFns__$1
 }, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, undefined, undefined, undefined);
 
-var Components = /*#__PURE__*/Object.freeze({
+var Atoms = /*#__PURE__*/Object.freeze({
   __proto__: null,
   Link: __vue_component__,
   Logo: __vue_component__$1
 });
 
 function install(Vue) {
-  if (install.installed) {
-    return;
-  }
-
+  if (install.installed) return;
   install.installed = true;
-  Vue.component('Components', Components);
+  Vue.component('Atoms', Atoms);
 } // Create module definition for Vue.use()
 
 
@@ -234,5 +237,7 @@ if (GlobalVue) {
 } // To allow use as module (npm/webpack/etc.) export component
 
 
-export default Components;
+var wrapper = _objectSpread({}, Atoms);
+
+export default wrapper;
 export { install };
