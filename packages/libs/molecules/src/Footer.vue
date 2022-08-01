@@ -338,6 +338,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+body {
+  list-style: none;
+}
 .wrapper .info {
   max-width: 1180px;
   width: 100%;

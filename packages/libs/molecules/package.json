@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/atoms.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/atoms.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/atoms.min.js"
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/molecules.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/molecules.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/molecules.min.js"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
