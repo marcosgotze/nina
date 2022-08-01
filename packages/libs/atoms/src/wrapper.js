@@ -1,10 +1,10 @@
-import * as Components from './components/index';
+import * as Atoms from './components/index';
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
 	if (install.installed) return;
 	install.installed = true;
-	Vue.component('Components', Components);
+	Vue.component('Atoms', Atoms);
 }
 
 // Create module definition for Vue.use()
@@ -24,4 +24,4 @@ if (GlobalVue) {
 }
 
 // To allow use as module (npm/webpack/etc.) export component
-export default Components;
+export default { ...Atoms };
