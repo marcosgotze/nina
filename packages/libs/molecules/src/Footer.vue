@@ -318,12 +318,12 @@
       </nav>
     </section>
     <section class="juridic">
-      <div>CNPJ: {{ cnpj }}</div>
+      <div>CNPJ: 45454543534</div>
     </section>
     <section class="copyright">
       <div class="copyright__content">
         <img :src="logoFatal" alt="Acompanhantes Fatal Model" />
-        <p>Copyright {{ yearCopyright }} © Fatal Model.</p>
+        <p>Copyright 2022 © Fatal Model.</p>
       </div>
     </section>
   </div>
