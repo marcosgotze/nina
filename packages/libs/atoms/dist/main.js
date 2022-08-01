@@ -12,7 +12,7 @@
   //
 
   var script = {
-    name: 'link',
+    name: 'Link',
     props: {
       text: {
         required: false,
@@ -157,7 +157,7 @@
   //
 
   var script$1 = {
-    name: 'logo'
+    name: 'Logo'
   };
 
   /* script */
@@ -222,7 +222,7 @@
       Link: __vue_component__, Logo: __vue_component__$1
   };
 
-  var Atoms = /*#__PURE__*/Object.freeze({
+  var Components = /*#__PURE__*/Object.freeze({
     __proto__: null,
     'default': index
   });
@@ -231,7 +231,7 @@
   function install(Vue) {
   	if (install.installed) return;
   	install.installed = true;
-  	Vue.component('Atoms', Atoms);
+  	Vue.component('Components', Components);
   }
 
   // Create module definition for Vue.use()
@@ -250,10 +250,7 @@
   	GlobalVue.use(plugin);
   }
 
-  // To allow use as module (npm/webpack/etc.) export component
-  var wrapper = { ...Atoms };
-
-  exports.default = wrapper;
+  exports.default = Components;
   exports.install = install;
 
   Object.defineProperty(exports, '__esModule', { value: true });

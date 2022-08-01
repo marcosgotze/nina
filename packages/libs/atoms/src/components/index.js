@@ -1,6 +1,6 @@
 import Link from './Link.vue'
 import Logo from './Logo.vue'
 
-export default {
+export {
     Link, Logo
 }
