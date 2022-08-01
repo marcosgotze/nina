@@ -1,7 +1,7 @@
 {
   "name": "@marcosgotze/atoms",
   "version": "1.0.7-alpha.49",
-  "main": "dist/atoms.umd.min.js",
+  "main": "src/main.js",
   "files": [
     "dist/*"
   ],
