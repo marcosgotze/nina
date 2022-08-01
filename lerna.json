@@ -3,6 +3,7 @@
     "packages/**"
   ],
   "version": "independent",
+  "useNx": true,
   "command": {
     "publish": {
       "conventionalCommits": true,

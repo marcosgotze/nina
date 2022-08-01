@@ -35,7 +35,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@marcosgotze/atoms": "^1.0.8-alpha.6",
     "@nrwl/nx-cloud": "^14.2.0",
     "@nx-plus/vue": "^14.1.0",
     "@storybook/builder-webpack5": "^6.5.9",
