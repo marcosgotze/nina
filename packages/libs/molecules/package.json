@@ -1,40 +1,24 @@
 {
   "name": "@marcosgotze/molecules",
-  "version": "1.0.23",
-  "main": "library.js",
-  "module": "dist/library.mjs",
-  "files": [
-    "dist/*"
-  ],
+  "version": "1.2.3",
+  "main": "dist/molecules.umd.js",
+  "module": "dist/molecules.esm.js",
+  "unpkg": "dist/molecules.min.js",
+  "browser": {
+    "./sfc": "src/Footer.vue"
+  },
   "scripts": {
-    "build": "rollup -c"
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/atoms.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/atoms.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/atoms.min.js"
   },
-  "keywords": [],
-  "author": "marcos gotze",
-  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.18.9",
-    "rollup": "^2.77.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
-  },
-  "directories": {
-    "doc": "docs"
-  },
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marcosgotze/nina.git"
-  },
-  "bugs": {
-    "url": "https://github.com/marcosgotze/nina/issues"
-  },
-  "homepage": "https://github.com/marcosgotze/nina#readme",
-  "publishConfig": {
-    "@marcosgotze:registry": "https://npm.pkg.github.com/"
-  },
-  "dependencies": {
-    "@marcosgotze/atoms": "^1.0.7-alpha.51",
-    "vue": "3.2.21"
+    "rollup": "^1.17.0",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
   }
 }
