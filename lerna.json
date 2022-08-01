@@ -5,7 +5,18 @@
   "version": "independent",
   "command": {
     "publish": {
+      "conventionalCommits": true,
       "registry": "https://npm.pkg.github.com/marcosgotze"
     }
+  },
+  "ignoreChanges": [
+    "**/CHANGELOG.md",
+    "**/node_modules/**",
+    "**/package.json",
+    "**/*.md",
+    "**/perf/**"
+  ],
+  "lifecycle": {
+    "version": "npm run build && git add ."
   }
 }
