@@ -6,7 +6,7 @@
     "dist/*"
   ],
   "scripts": {
-    "build": "rollup --config build/rollup.config.js"
+    "build": "rollup --config"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
