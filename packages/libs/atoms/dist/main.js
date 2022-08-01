@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-  typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.main = {}));
-}(this, (function (exports) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = global || self, global.Atoms = factory());
+}(this, (function () { 'use strict';
 
   //
   //
@@ -223,38 +223,7 @@
       Logo: __vue_component__$1
   };
 
-  var Components = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    'default': Atoms
-  });
-
-  // Declare install function executed by Vue.use()
-  function install(Vue) {
-  	if (install.installed) return;
-  	install.installed = true;
-  	Vue.component('Components', Components);
-  }
-
-  // Create module definition for Vue.use()
-  const plugin = {
-  	install,
-  };
-
-  // Auto-install when vue is found (eg. in browser via <script> tag)
-  let GlobalVue = null;
-  if (typeof window !== 'undefined') {
-  	GlobalVue = window.Vue;
-  } else if (typeof global !== 'undefined') {
-  	GlobalVue = global.Vue;
-  }
-  if (GlobalVue) {
-  	GlobalVue.use(plugin);
-  }
-
-  exports.default = Components;
-  exports.install = install;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
+  return Atoms;
 
 })));
 //# sourceMappingURL=main.js.map
