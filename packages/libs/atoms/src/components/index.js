@@ -1,2 +1,6 @@
-export { default as Link } from './Link.vue'
-export { default as Logo } from './Logo.vue'
+import Link from './Link.vue'
+import Logo from './Logo.vue'
+
+export default {
+    Link, Logo
+}
