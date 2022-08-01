@@ -1,7 +1,7 @@
 {
   "name": "@marcosgotze/atoms",
-  "version": "1.0.8-alpha.2",
-  "main": "dist/main.js.map",
+  "version": "1.0.8-alpha.7",
+  "main": "dist/main.js",
   "files": [
     "dist/*"
   ],
