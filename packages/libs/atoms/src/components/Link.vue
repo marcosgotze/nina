@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'link',
+  name: 'Link',
   props: {
     text: {
       required: false,
