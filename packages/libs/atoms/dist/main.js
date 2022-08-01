@@ -218,12 +218,13 @@
       undefined
     );
 
-
+  var index = {
+      Link: __vue_component__, Logo: __vue_component__$1
+  };
 
   var Atoms = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    Link: __vue_component__,
-    Logo: __vue_component__$1
+    'default': index
   });
 
   // Declare install function executed by Vue.use()

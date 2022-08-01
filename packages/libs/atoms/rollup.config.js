@@ -7,7 +7,8 @@ export default {
           file: 'dist/main.js',
           format: 'umd',
           name: 'main',
-          sourcemap: true
+          sourcemap: true,
+          exports: 'named'
         }
       ],
     plugins: [
