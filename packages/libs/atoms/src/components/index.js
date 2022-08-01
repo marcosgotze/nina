@@ -1,6 +1,9 @@
 import Link from './Link.vue'
 import Logo from './Logo.vue'
 
-export {
-    Link, Logo
+const Atoms = {
+    Link, 
+    Logo
 }
+
+export default Atoms

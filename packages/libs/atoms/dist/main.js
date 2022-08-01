@@ -218,12 +218,14 @@
       undefined
     );
 
-
+  const Atoms = {
+      Link: __vue_component__, 
+      Logo: __vue_component__$1
+  };
 
   var Components = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    Link: __vue_component__,
-    Logo: __vue_component__$1
+    'default': Atoms
   });
 
   // Declare install function executed by Vue.use()
