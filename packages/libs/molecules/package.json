@@ -31,5 +31,8 @@
   "homepage": "https://github.com/marcosgotze/nina#readme",
   "publishConfig": {
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0"
   }
 }
