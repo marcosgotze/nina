@@ -2,7 +2,7 @@
   "name": "marcosgotze",
   "version": "1.0.0",
   "scripts": {
-    "start": "lerna bootstrap && npm run sb",
+    "start": "npm run sb",
     "clear": "lerna clean -y && lerna bootstrap --hoist",
     "build": "lerna run build --parallel",
     "test": "echo TESTS PASSED",
