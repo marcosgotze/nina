@@ -24,6 +24,7 @@ jobs:
         git checkout ${{ github.ref }}
 
         npm ci
+        npx lerna bootstrap
         npm run build --if-present
 
         if [ ${{ github.base_ref }} = development ]; then
