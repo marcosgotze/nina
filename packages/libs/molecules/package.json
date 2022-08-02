@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/molecules",
-  "version": "1.2.17",
+  "version": "1.2.18",
   "main": "dist/molecules.umd.js",
   "module": "dist/molecules.esm.js",
   "unpkg": "dist/molecules.min.js",
