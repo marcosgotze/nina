@@ -6,13 +6,19 @@ module.exports = {
   core: {
     builder: "webpack5"
   },
-  webpackFinal: async (config, { configType }) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "@": path.resolve(__dirname, "../src/"),
-    };
-    // keep this if you're doing typescript
-    // config.resolve.extensions.push(".ts", ".tsx");
-    return config;
-  },
+  webpackFinal: (config) => {
+    config.module.rules.push({
+        test: /\.s[ac]ss$/i,
+        use: [
+            // Creates `style` nodes from JS strings
+            'style-loader',
+            // Translates CSS into CommonJS
+            'css-loader',
+            // Compiles Sass to CSS
+            'sass-loader',
+        ],
+    })
+
+    return config
+}
 };

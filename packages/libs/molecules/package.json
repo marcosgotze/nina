@@ -33,6 +33,7 @@
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "@marcosgotze/atoms": "^1.0.8-alpha.12",
     "@rollup/plugin-node-resolve": "^13.3.0"
   }
 }

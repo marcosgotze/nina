@@ -1,4 +1,4 @@
-import Footer  from '../../packages/libs/molecules/src/Footer';
+import Footer  from '../../packages/libs/molecules/src/Footer.vue';
 
 export default {
   title: 'Molecules',
@@ -10,8 +10,8 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<footer />',
+  template: '<Footer />',
 });
 
-export const Flogo = Template.bind({});
+export const FmFooter = Template.bind({});
 
