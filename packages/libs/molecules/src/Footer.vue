@@ -9,7 +9,7 @@
             acompanhantes do Brasil. A missão Fatal Model é 'organizar e
             dignificar o mercado de acompanhantes do mundo'. Acompanhantes
             mulheres, homens e transex de todo o Brasil em mais de 25 mil
-            anúncios ativos.
+            anúncios ativos. . 
           </p>
           <ul class="social__links">
             <li>
