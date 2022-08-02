@@ -1,14 +1,16 @@
 # monorepo
 
-Lerna
+#### Lerna https://lerna.js.org/docs/introduction
 
-lerna run
+### comandos
 
-lerna bootstrap
+`lerna run`
 
-lerna add @marcosgotze/atoms --scope=@marcosgotze/molecules
+`lerna bootstrap`
 
-lerna version
+`lerna add @marcosgotze/atoms --scope=@marcosgotze/molecules`
 
-lerna publish
+`lerna version`
+
+`lerna publish`
 
