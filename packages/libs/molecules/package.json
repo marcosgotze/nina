@@ -1,6 +1,6 @@
 {
   "name": "@marcosgotze/molecules",
-  "version": "1.2.18",
+  "version": "1.2.19",
   "main": "dist/molecules.umd.js",
   "module": "dist/molecules.esm.js",
   "unpkg": "dist/molecules.min.js",
@@ -33,7 +33,7 @@
     "@marcosgotze:registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@marcosgotze/atoms": "^1.0.8-alpha.12",
+    "@marcosgotze/atoms": "^1.0.8-alpha.15",
     "@rollup/plugin-node-resolve": "^13.3.0"
   }
 }
