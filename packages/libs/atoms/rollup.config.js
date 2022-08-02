@@ -7,7 +7,6 @@ export default {
           file: 'dist/main.js',
           format: 'esm',
           name: 'Atoms',
-          sourcemap: true,
         }
       ],
     plugins: [
